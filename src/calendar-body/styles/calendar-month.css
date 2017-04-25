@@ -1,0 +1,36 @@
+.date-scroll {
+  width: 100%; }
+  .date-scroll a {
+    cursor: pointer; }
+    .date-scroll a:hover, .date-scroll a:focus {
+      color: #fff;
+      text-decoration: none; }
+
+.date-scroll .calendar-month {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  clear: both;
+  overflow: auto; }
+  .date-scroll .calendar-month .calendar-month-header {
+    margin: 20px 0;
+    width: 100%;
+    font-weight: 300;
+    font-size: 24px;
+    clear: both; }
+  .date-scroll .calendar-month .calendar-month-days {
+    width: 100%;
+    background: #f4f4f4;
+    overflow: auto; }
+    .date-scroll .calendar-month .calendar-month-days .calendar-month-day {
+      position: relative;
+      float: left;
+      width: 14.28571%;
+      height: 50px;
+      display: table;
+      background: #f4f4f4; }
+      .date-scroll .calendar-month .calendar-month-days .calendar-month-day .calendar-month-day-content {
+        font-size: 13px;
+        font-weight: 700;
+        display: table-cell;
+        vertical-align: middle; }

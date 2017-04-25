@@ -1,0 +1,14 @@
+.date-scroll {
+	
+	width: 100%;
+
+	a {
+		cursor: pointer;
+
+		&:hover, &:focus {
+    		color: $white;
+    		text-decoration: none;
+		}
+	}
+
+}

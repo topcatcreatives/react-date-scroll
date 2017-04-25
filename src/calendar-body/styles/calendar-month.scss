@@ -1,0 +1,50 @@
+@import '../../styles/date-scroll.scss';
+
+$month-bg-color: $light-grey;
+$month-header-font-size: 24px;
+$month-day-font-size: 13px;
+$month-header-font-weight: $font-weight-normal;
+$month-day-font-weight: $font-weight-heavy;
+$month-cell-height: $cell-height;
+$month-header-margin: $margin-md;
+
+.date-scroll {
+	
+	.calendar-month {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		clear: both;
+		overflow: auto;
+
+		.calendar-month-header {
+			margin: $month-header-margin 0;
+			width: 100%;
+			font-weight: $month-header-font-weight;
+			font-size: $month-header-font-size;
+			clear: both;
+		}
+
+		.calendar-month-days {
+			width: 100%;
+			background: $month-bg-color;
+			overflow: auto;
+
+			.calendar-month-day {
+				position: relative;
+				float: left;
+				width: percentage(1/7);
+				height: $month-cell-height;
+				display: table;
+				background: $light-grey;
+
+				.calendar-month-day-content {
+					font-size: $month-day-font-size;
+					font-weight: $month-day-font-weight;
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.date-scroll {
+  width: 100%; }
+  .date-scroll a {
+    cursor: pointer; }
+    .date-scroll a:hover, .date-scroll a:focus {
+      color: #fff;
+      text-decoration: none; }
+
+.date-scroll .calendar {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: transform .35s;
+  background: #fff; }
+  .date-scroll .calendar.calendar-show {
+    transform: translateX(0); }
+  .date-scroll .calendar.calendar-hide {
+    transform: translateX(-100%); }

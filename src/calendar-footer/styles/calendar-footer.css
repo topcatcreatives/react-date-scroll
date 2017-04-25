@@ -1,0 +1,28 @@
+.date-scroll {
+  width: 100%; }
+  .date-scroll a {
+    cursor: pointer; }
+    .date-scroll a:hover, .date-scroll a:focus {
+      color: #fff;
+      text-decoration: none; }
+
+.date-scroll .calendar-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  z-index: 10; }
+  .date-scroll .calendar-footer .calendar-footer-container {
+    padding: 10px; }
+    .date-scroll .calendar-footer .calendar-footer-container .button-done {
+      display: block;
+      width: 100%;
+      background: #5bc0de;
+      outline: none;
+      color: #fff;
+      line-height: 22px;
+      padding: 20px 30px;
+      font-weight: 700;
+      vertical-align: middle;
+      border-width: 0;
+      font-size: 17px; }

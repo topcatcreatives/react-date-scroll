@@ -1,0 +1,7 @@
+.date-scroll {
+  width: 100%; }
+  .date-scroll a {
+    cursor: pointer; }
+    .date-scroll a:hover, .date-scroll a:focus {
+      color: #fff;
+      text-decoration: none; }

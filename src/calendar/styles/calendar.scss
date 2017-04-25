@@ -1,0 +1,29 @@
+@import '../../styles/date-scroll.scss';
+
+$calendar-bg-color: $white;
+$calendar-z-index: $overlay-z-index;
+
+.date-scroll {
+
+	.calendar {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: $calendar-z-index;
+		transition: transform .35s;
+		background: $calendar-bg-color;
+
+		&.calendar-show {
+			transform: translateX(0);	
+		}
+
+		&.calendar-hide {
+			transform: translateX(-100%);
+		}
+	}
+
+}
+

@@ -1,0 +1,44 @@
+.date-scroll {
+  width: 100%; }
+  .date-scroll a {
+    cursor: pointer; }
+    .date-scroll a:hover, .date-scroll a:focus {
+      color: #fff;
+      text-decoration: none; }
+
+.date-scroll .calendar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 60px;
+  background: #337ab7;
+  color: #fff;
+  z-index: 10;
+  padding: 0 10px;
+  overflow: hidden;
+  font-size: 17px; }
+
+.date-scroll .calendar-header-buttons {
+  margin: 20px 0;
+  overflow: hidden;
+  width: 100%; }
+
+.date-scroll .button {
+  text-decoration: none;
+  color: #fff; }
+
+.date-scroll .button-clear {
+  float: left;
+  width: 20%;
+  text-align: left; }
+
+.date-scroll .button-close {
+  float: right;
+  width: 20%;
+  text-align: right; }
+
+.date-scroll .calendar-header-status {
+  display: inline-block;
+  width: 60%;
+  text-align: center; }

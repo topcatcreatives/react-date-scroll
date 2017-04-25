@@ -1,0 +1,56 @@
+@import '../../styles/date-scroll.scss';
+
+$calendar-header-height: $header-height;
+$calendar-header-bg-color: $blue;
+$calendar-header-color: $white;
+$calendar-header-padding: $padding-sm;
+$calendar-header-font-size: $font-size-large;
+$calendar-header-z-index: $overlay-z-index;
+$calendar-header-buttons-margin: $margin-md;
+$calendar-header-button-color: $white;
+
+.date-scroll {
+
+	.calendar-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		min-height: $calendar-header-height;
+		background: $calendar-header-bg-color;
+		color: $calendar-header-color;
+		z-index: $calendar-header-z-index;
+		padding: 0 $calendar-header-padding;
+		overflow: hidden;
+		font-size: $calendar-header-font-size;
+	}
+
+	.calendar-header-buttons {
+		margin: $calendar-header-buttons-margin 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.button {
+		text-decoration: none;
+		color: $calendar-header-button-color;
+	}
+
+	.button-clear {
+		float: left;
+		width: 20%;
+		text-align: left;
+	}
+
+	.button-close {
+		float: right;
+		width: 20%;
+		text-align: right;
+	}
+
+	.calendar-header-status {
+		display: inline-block;
+		width: 60%;
+		text-align: center;
+	}
+}

@@ -1,0 +1,38 @@
+@import '../../styles/date-scroll.scss';
+
+$selected-date-bg-color: $navy-blue;
+$selected-date-color: $white;
+$in-range-date-bg-color: $navy-blue-lightened;
+$date-content-font-size: $font-size-normal;
+$date-cell-height: $cell-height;
+
+.date-scroll {
+
+	.calendar-date {
+		position: relative;
+		height: $date-cell-height;
+		float: left;
+		width: percentage(1/7);
+		
+		.calendar-date-content-wrapper {
+			display: table;
+			height: 100%;
+			width: 100%;
+
+			.calendar-date-content {
+				font-size: $date-content-font-size;
+				display: table-cell;
+				vertical-align: middle;
+			}
+		}
+
+		&.calendar-date-selected {
+			background: $selected-date-bg-color;
+			color: $selected-date-color;
+		}
+
+		&.calendar-date-in-range {
+			background: $in-range-date-bg-color;
+		}
+	}
+}

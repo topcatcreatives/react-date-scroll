@@ -1,0 +1,26 @@
+.date-scroll {
+  width: 100%; }
+  .date-scroll a {
+    cursor: pointer; }
+    .date-scroll a:hover, .date-scroll a:focus {
+      color: #fff;
+      text-decoration: none; }
+
+.date-scroll .calendar-date {
+  position: relative;
+  height: 50px;
+  float: left;
+  width: 14.28571%; }
+  .date-scroll .calendar-date .calendar-date-content-wrapper {
+    display: table;
+    height: 100%;
+    width: 100%; }
+    .date-scroll .calendar-date .calendar-date-content-wrapper .calendar-date-content {
+      font-size: 13px;
+      display: table-cell;
+      vertical-align: middle; }
+  .date-scroll .calendar-date.calendar-date-selected {
+    background: #2e6da4;
+    color: #fff; }
+  .date-scroll .calendar-date.calendar-date-in-range {
+    background: #dce9f5; }

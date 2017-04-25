@@ -1,0 +1,43 @@
+@import '../../styles/date-scroll.scss';
+
+$footer-height: 80px;
+$footer-z-index: $overlay-z-index;
+$footer-padding: $padding-sm;
+$done-button-color: $white;
+$done-button-bg-color: $turquoise;
+$done-button-font-size: $font-size-large;
+$done-button-font-weight: $font-weight-heavy;
+$done-button-line-height: 22px;
+$done-button-padding-vert: $padding-md;
+$done-button-padding-hori: $padding-lg;
+
+.date-scroll {
+	
+	.calendar-footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: $footer-height;
+		z-index: $footer-z-index;
+
+		.calendar-footer-container {
+			padding: $padding-sm;
+
+			.button-done {
+				display: block;
+				width: 100%;
+				background: $done-button-bg-color;
+				outline: none;
+				color: $done-button-color;
+				line-height: $done-button-line-height;
+				padding: $done-button-padding-vert $done-button-padding-hori;
+				font-weight: $done-button-font-weight;
+				vertical-align: middle;
+				border-width: 0;
+				font-size: $done-button-font-size;
+			}
+
+		}
+
+	}
+}
