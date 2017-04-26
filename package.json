@@ -1,6 +1,6 @@
 {
   "name": "react-date-scroll",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "An infinite scroll date range picker react component",
   "repository": {
     "type": "git",

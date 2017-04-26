@@ -1,0 +1,120 @@
+
+
+@mixin placeholder($color) {
+	&::-webkit-input-placeholder { /* WebKit browsers */
+    	color: $color;
+  	}
+  	&:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      	color: $color;
+  	}
+  	&::-moz-placeholder { /* Mozilla Firefox 19+ */
+    	color: $color;
+  	}
+  	&:-ms-input-placeholder { /* Internet Explorer 10+ */
+    	color: $color;
+  	}
+}
+
+$calendar-form-margin-top: 30px;
+$calendar-space-margin-top: 20px;
+$calendar-space-margin-top-lg: 30px;
+$calendar-form-control-bg-color: #fff;
+$calendar-form-button-font-size: 17px;
+$calendar-form-label-font-size: 15px;
+$calendar-form-label-color: #484848;
+$calendar-form-label-font-weight: 300;
+$calendar-form-label-padding: 4px;
+$calendar-form-button-padding: 10px;
+$calendar-form-control-padding: 10px;
+$calendar-form-control-font-size: 19px;
+$calendar-form-control-border-width: 1px;
+$calendar-form-control-border-color: #dce0e0;
+$calendar-form-control-border-hover-color: #2e6da4;
+$calendar-form-control-placeholder-color: #999;
+
+.calendar-form {
+
+	margin: $calendar-form-margin-top 0;
+
+	.space-top {
+		margin-top: $calendar-space-margin-top;
+	}
+
+	.space-top-large {
+		margin-top: $calendar-space-margin-top-lg;
+	}
+
+	label {
+		display: block;
+		width: 100%;
+		font-size: $calendar-form-label-font-size;
+		padding: $calendar-form-label-padding 0;
+		color: $calendar-form-label-color;
+		font-weight: $calendar-form-label-font-weight;
+	}
+
+	.row {
+		width: 100%;
+		overflow: auto;
+	}
+
+	.col-100 {
+		width: 100%;
+	}
+
+	.col-50 {
+		float: left;
+		width: 47%;
+
+		&:first-child {
+			padding-right: 3%;
+		}
+
+		&:last-child {
+			padding-left: 3%;
+		}
+	}
+
+	.btn {
+		width: 100%;
+		display: block;
+		background: #337ab7;
+		outline: none;
+		color: #fff;
+		line-height: 22px;
+		padding: 15px 30px;
+		margin: 12px 0;
+		font-weight: 700;
+		vertical-align: middle;
+		border-width: 0;
+		font-size: 17px;
+		border-radius: 0;
+	}
+
+	.form-group {
+
+		.form-control[readonly] {
+			background: $calendar-form-control-bg-color;
+		}
+
+		.form-control {
+			width: 100%;
+			height: auto;
+			padding: $calendar-form-control-padding 0;
+		    font-size: $calendar-form-control-font-size;
+		    outline: none;
+		    border-width: 0 0 $calendar-form-control-border-width;
+		    border-color: $calendar-form-control-border-color;
+		    border-radius: 0;
+		    box-shadow: none;
+		    @include placeholder($calendar-form-control-placeholder-color);
+
+		    &:focus {
+		    	border-bottom-color: $calendar-form-control-border-hover-color;
+		    	transition: border-color 0.2s;
+		    }
+		}
+
+	}
+	
+}

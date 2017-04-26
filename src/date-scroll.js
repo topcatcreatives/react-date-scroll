@@ -19,17 +19,27 @@ class DateScroll extends Component {
 	}
 
 	static propTypes = {
+		startDate: PropTypes.string,
+		endDate: PropTypes.string,
         dateFormat: PropTypes.string,
+        dayIndex: PropTypes.number,
+        isOpen: PropTypes.bool,
+        onDatesChange: PropTypes.func,
+        onToggle: PropTypes.func,
         startDateLabel: PropTypes.string,
-        endDateDateLabel: PropTypes.string,
-        dayIndex: PropTypes.number
+        endDateDateLabel: PropTypes.string
     }
 
     static defaultProps = {
+    	startDate: null,
+    	endDate: null,
     	dateFormat: 'DD-MM-YYYY',
+    	dayIndex: 1,
+    	isOpen: false,
+    	onDatesChange: null,
+    	onToggle: null,
     	startDateLabel: 'start date',
-    	endDateLabel: 'end date',
-    	dayIndex: 1
+    	endDateLabel: 'end date'
     }
 
 	handleDateClick(date) {

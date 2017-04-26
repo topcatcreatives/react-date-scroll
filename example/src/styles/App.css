@@ -1,0 +1,17 @@
+body, button, input {
+  font-family: "Signika", sans-serif; }
+
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  color: #484848; }
+  h1 small {
+    width: 100%;
+    display: block;
+    font-size: 60%;
+    color: #777;
+    margin: 10px 0; }
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto; }
