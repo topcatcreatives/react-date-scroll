@@ -46,11 +46,9 @@ class App extends Component {
 				<div className="container">
 			
 					<h1>
-						Date Scroll
-						<small>Infinite scroll date range picker</small>
+						Just an example
+						<small>using date scroll</small>
 					</h1>
-
-					<h3>Example usage</h3>
 
 					<CalendarForm 
 						datePickerToggle={this.datePickerToggle}
